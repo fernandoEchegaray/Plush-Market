@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/a2fbf4ceb6.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>PlushStart</title>
+</head>
+<body>
+  <div class="top">
+    <h2>FREE PHONE GRIP ON SELECT PURCHASES</h2>
+  </div>
+  <header>
+    <h1>PlushStart</h1>
+    <input type="text" placeholder="   Search your plush here!" class="input">
+    <p class="span">
+      <span class="cantidad0">0</span> Items
+    </p>
+    <div>
+        <a href="#"><img src="assets/imgs/glass.jpg" alt="glass!" class="glass"></a>
+    </div>
+    <img src="assets/imgs/cart-dark.png" alt="cart">
+  </header>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>New</li>
+      <li>Products</li>
+      <li>Sales</li>
+      <li>Blog</li>
+      <li><a onclick="alerta(this)" href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+  <div class="main-title">
+      <p>Plushy Store</p>
+  </div>
+    <div class="productsCount">  
+      <div class="correctLeft">
+          <label>62 Products, sorted by:</label>
+          <p id="output"></p>
+      </div>
+      <div class="correctRight">
+          <form>
+              <label>Sort by:</label>
+              <select id="select" onchange="Sort_by()">
+                  <option>Best Selling</option>
+                  <option>Price</option>
+              </select>
+          </form>
+      </div>
+    </div>  
+    <div class="gallery">
+      <div>
+        <img src="assets/imgs/product-image.png" alt="oso-1">
+        <p>Mischief Mouse</p>
+        <button onclick="add_product(0)">Buy</button>
+      </div>
+      <div>
+        <img src="assets/imgs/download.jpeg" alt="oso-2">
+        <p>Shy Shrew</p>
+        <button onclick="add_product(0)">Buy</button>
+      </div>
+      <div>
+        <img src="assets/imgs/hungry.webp" alt="oso-3">
+        <p>Hangry Hamster</p>
+        <button onclick="add_product(0)">Buy</button>
+      </div>
+      <div>
+        <img src="assets/imgs/chill-i.webp" alt="oso-4">
+        <p>Chilly Willy</p>
+        <button onclick="add_product(0)">Buy</button>
+      </div>
+    </div>
+
+
+  </main>
+<script src="assets/js/script.js"></script> 
+</body>
+</html>
