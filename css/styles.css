@@ -33,7 +33,6 @@ header .input{
 }
 header .glass{
   position: absolute;
-  top: 37px;
   right: 350px;
   color: red;
   width: 50px;
